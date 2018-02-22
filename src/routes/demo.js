@@ -4,8 +4,8 @@ import demoController from '../controllers';
 const { Router } = express;
 const { demo } = demoController;
 
-const router = Router();
+const api = Router();
 
-router.get('/', demo.hi);
+api.get('/', demo.hi);
 
-export default router;
+export default api;
