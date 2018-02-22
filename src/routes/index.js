@@ -1,5 +1,6 @@
 import express from 'express';
 // import middlewares from '../middlewares';
+import demo from './demo';
 
 const { Router } = express;
 const router = Router();
@@ -18,5 +19,6 @@ router.get('/_health', (req, res) => {
 });
 
 // set routes here
+router.use('/demo', demo);
 
 export default router;
