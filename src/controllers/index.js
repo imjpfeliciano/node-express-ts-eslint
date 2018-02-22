@@ -1,3 +1,5 @@
-export default {
+import demo from './demo';
 
+export default {
+  demo,
 };
