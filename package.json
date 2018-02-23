@@ -26,7 +26,12 @@
   },
   "homepage": "https://github.com/yoniihdc/node-express-es6-airbnb#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan-body": "^2.3.1",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-ui-express": "^2.0.15"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,13 +39,11 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
-    "cors": "^2.8.4",
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "morgan-body": "^2.3.1",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2"
   }
