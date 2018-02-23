@@ -8,12 +8,14 @@
 * All code following Airbnb's Javascript (ES6) style guide.
 * Create deployment build with `$ npm run build`.
 * Pre-commit script to prevent commit files that could break your app in production.
+* `/docs` endpoint with the API documentation for external users
 
 # Components
 * [Babel](https://babeljs.io/)
 * [ESlint](https://eslint.org/)
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](http://expressjs.com/)
+* [Swagger](https://swagger.io/)
 
 # Getting start
 Just run the following commands in your terminal to start coding
