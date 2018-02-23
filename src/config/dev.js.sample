@@ -1,4 +1,6 @@
 export default {
   port: 3005,
   bodyLimit: '100kb',
+  API_URL: 'http://localhost',
+  API_PORT: 3005
 }
