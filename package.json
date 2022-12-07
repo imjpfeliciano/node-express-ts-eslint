@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/yoniihdc/node-express-es6-airbnb#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "morgan-body": "^2.3.1",
     "swagger-jsdoc": "^1.9.7",
     "swagger-ui-express": "^2.0.15"
