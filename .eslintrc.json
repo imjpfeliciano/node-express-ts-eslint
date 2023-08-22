@@ -10,7 +10,13 @@
     "import/no-named-as-default-member": "off",
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-quotes": ["error", "prefer-single"],
-    "eol-last": ["error", "always"]
+    "eol-last": ["error", "always"],
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }]
   },
   "env": {
       "browser": true,
@@ -18,5 +24,17 @@
   },
   "globals": {
     "document": false
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "paths": ["src"], // This allows absolute imports from "src
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

@@ -1,5 +1,8 @@
-import config from './index';
 
+const config = {
+  API_URL: 'http://localhost',
+  API_PORT: 3000,
+}
 const swaggerDefinition = {
   info: {
     title: 'node-express-es6-airbnb',

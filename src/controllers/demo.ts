@@ -1,5 +1,5 @@
 export default {
-  hi(req, res) {
+  hi(req: any, res: any) {
     res.status(200).json({
       hello: 'world',
     });
