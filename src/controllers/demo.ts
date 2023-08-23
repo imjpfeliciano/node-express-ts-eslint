@@ -1,4 +1,4 @@
-export const hi = () => {
+export const hi = (): any => {
   return {
     hello: 'world'
   }

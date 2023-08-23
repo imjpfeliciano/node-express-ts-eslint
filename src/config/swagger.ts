@@ -1,21 +1,49 @@
-
-const config = {
-  API_URL: 'http://localhost',
-  API_PORT: 3000,
-}
-const swaggerDefinition = {
-  info: {
-    title: 'node-express-es6-airbnb',
-    version: '0.0.1',
-    description: 'node-express-es6-airbnb is a project that provides you with a boilerplate tool to create a <a href="https://nodejs.org/en/">node.js</a> API with an ES6 transpiler while following the <a href="https://github.com/airbnb/javascript">Airbnb Javascript (ES6) Style Guide</a>.',
+const swaggerDocument = {
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Express API with Swagger",
+    "description": "This is a simple API application made with Express and documented with Swagger",
+    "version": "1.0.0"
   },
-  host: `${config.API_URL}:${config.API_PORT}`,
-  basePath: '/',
-};
+  "servers": [
+    {
+      "url": "http://localhost:3000/api"
+    }
+  ],
+  "paths": {
+    "/demo": {
+      "get": {
+        "tags": [
+          "Demo"
+        ],
+        "description": "Retrieves a JSON object with <b>hello world<b>",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/demo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "demo": {
+        "type": "object",
+        "properties": {
+          "hello": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
 
-const swaggerOptions = {
-  swaggerDefinition,
-  apis: ['./src/routes/*.js']
-};
-
-export default swaggerOptions;
+export default swaggerDocument
