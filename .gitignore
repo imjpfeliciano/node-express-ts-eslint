@@ -3,3 +3,8 @@ node_modules/
 
 src/config/dev.js
 src/config/prod.js
+
+.env
+.env.*
+
+!.env.sample
