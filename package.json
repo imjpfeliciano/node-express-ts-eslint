@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoniihdc/node-express-es6-airbnb.git"
+    "url": "git+https://github.com/imjpfeliciano/node-express-ts-eslint.git"
   },
   "author": "jperazafeliciano@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yoniihdc/node-express-es6-airbnb/issues"
+    "url": "https://github.com/imjpfeliciano/node-express-ts-eslint/issues"
   },
-  "homepage": "https://github.com/yoniihdc/node-express-es6-airbnb#readme",
+  "homepage": "https://github.com/imjpfeliciano/node-express-ts-eslint#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
