@@ -1,25 +1,23 @@
-import * as dotenv from 'dotenv';
-import express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
-// import morganBody from 'morgan-body';
+import * as dotenv from 'dotenv'
+import express from 'express'
+import cors from 'cors'
+import helmet from 'helmet'
 // import swaggerJSDoc from 'swagger-jsdoc';
 // import swaggerUi from 'swagger-ui-express';
 
-// import config from './config';
-import routes from './routes';
+import routes from './routes'
 // import swaggerOptions from './config/swagger';
 
-dotenv.config();
-const PORT = process.env.PORT || 3000;
-const app = express();
+dotenv.config()
+const PORT = process.env.PORT || 3000
+const app = express()
 
 // app config
-app.use(helmet());
-app.use(cors());
-app.use(express.json());
+app.use(helmet())
+app.use(cors())
+app.use(express.json())
 
-
+// TODO: Add support for swagger
 // // swagger Documentation
 // const swaggerSpec = swaggerJSDoc(swaggerOptions);
 // const swaggerUiHandler = swaggerUi.setup(swaggerSpec);
@@ -39,8 +37,8 @@ app.use(express.json());
 // });
 
 // api routes to /api
-app.use('/api', routes);
+app.use('/api', routes)
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+  console.log(`Server running on port ${PORT}`)
+})

@@ -1,10 +1,10 @@
-import express from 'express';
-import demoController from '../controllers';
+import express from 'express'
+import demoController from '../controllers'
 
-const { Router } = express;
-const { demo } = demoController;
+const { Router } = express
+const { demo } = demoController
 
-const api = Router();
+const api = Router()
 
 /**
  * @swagger
@@ -20,6 +20,8 @@ const api = Router();
  *         schema:
  *           $ref: '#/definitions/demo'
  */
-api.get('/', demo.hi);
+api.get('/', (_, res) => {
+  return res.status(200).json(demo.hi())
+})
 
-export default api;
+export default api
