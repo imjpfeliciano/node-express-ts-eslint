@@ -2,11 +2,10 @@ import * as dotenv from 'dotenv'
 import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
-// import swaggerJSDoc from 'swagger-jsdoc';
-import swaggerUi from 'swagger-ui-express';
+import swaggerUi from 'swagger-ui-express'
 
 import routes from './routes'
-import swaggerDocument from './config/swagger';
+import swaggerDocument from './config/swagger'
 
 dotenv.config()
 const PORT = process.env.PORT ?? 3000
@@ -18,7 +17,7 @@ app.use(cors())
 app.use(express.json())
 
 // swagger config
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 // api routes to /api
 app.use('/api', routes)
