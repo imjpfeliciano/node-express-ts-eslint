@@ -1,5 +1,5 @@
-# node-express-es6-airbnb
-`node-express-es6-airbnb` is a project that provides you with a boilerplate tool to create a [node.js](https://nodejs.org/en/) API with an ES6 transpiler while following the [ts-standard](https://github.com/standard/ts-standard) eslint rules.
+# node-express-ts-eslint
+`node-express-ts-eslint` is a project that provides you with a boilerplate tool to create a [node.js](https://nodejs.org/en/) API with an ES6 transpiler while following the [ts-standard](https://github.com/standard/ts-standard) eslint rules.
 
 # Features
 * Simple `/api/` endpoint that provides you a JSON object `{hi: 'there'}`.
@@ -19,8 +19,8 @@
 # Getting start
 Just run the following commands in your terminal to start coding
 ```bash
-$ git clone https://github.com/imjpfeliciano/node-express-es6-airbnb
-$ cd node-express-es6-airbnb
+$ git clone https://github.com/imjpfeliciano/node-express-ts-eslint
+$ cd node-express-ts-eslint
 $ nvm use
 $ npm install
 ```
