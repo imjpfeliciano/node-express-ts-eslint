@@ -1,5 +1,5 @@
 # node-express-es6-airbnb
-`node-express-es6-airbnb` is a project that provides you with a boilerplate tool to create a [node.js](https://nodejs.org/en/) API with an ES6 transpiler while following the [Airbnb's Javascript (ES6) Style Guide](https://github.com/airbnb/javascript).
+`node-express-es6-airbnb` is a project that provides you with a boilerplate tool to create a [node.js](https://nodejs.org/en/) API with an ES6 transpiler while following the [ts-standard](https://github.com/standard/ts-standard) eslint rules.
 
 # Features
 * Simple `/api/` endpoint that provides you a JSON object `{hi: 'there'}`.
@@ -8,10 +8,10 @@
 * All code following Airbnb's Javascript (ES6) style guide.
 <!-- * Create deployment build with `$ npm run build`. -->
 * Pre-commit script to prevent commit files that could break your app in production.
-<!-- * `/docs` endpoint with the API documentation for external users -->
+* `/docs` endpoint with the API documentation for external users
 
 # Components
-* [ESlint](https://eslint.org/)
+* [ESlint](https://github.com/standard/ts-standard)
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](http://expressjs.com/)
 * [Swagger](https://swagger.io/)
@@ -19,7 +19,7 @@
 # Getting start
 Just run the following commands in your terminal to start coding
 ```bash
-$ git clone https://github.com/yoniihdc/node-express-es6-airbnb
+$ git clone https://github.com/imjpfeliciano/node-express-es6-airbnb
 $ cd node-express-es6-airbnb
 $ nvm use
 $ npm install
