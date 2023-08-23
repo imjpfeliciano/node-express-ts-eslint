@@ -1,6 +1,6 @@
 {
-  "name": "node-express-es6-airbnb",
-  "version": "1.0.0",
+  "name": "node-express-ts-eslint",
+  "version": "2.0.0",
   "description": "Boilerplate to creates node.js API with ES6 Transpiler and airbnb rules configured to eslint. ",
   "main": "index.js",
   "scripts": {
