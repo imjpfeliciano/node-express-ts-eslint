@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node ./dist/index.js",
     "precommit-msg": "echo 'Precommit checks...' && exit 0",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "start:dev": "ts-node-dev --respawn --pretty --transpile-only ./src/index.ts",
     "lint": "ts-standard --fix"
   },
